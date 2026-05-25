@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DIREEL | Sitio web en actualización</title>
+  <meta name="description" content="DIREEL se encuentra actualizando su página web. Servicio técnico diésel para unidades pesadas multimarcas en Veracruz." />
+
+  <style>
+    :root {
+      --azul: #2b2d42;
+      --gris: #8d99ae;
+      --claro: #edf2f4;
+      --rojo: #ef233c;
+      --rojo-fuerte: #d90429;
+      --blanco: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #1f2233, #2b2d42);
+      color: var(--blanco);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 980px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .top-bar {
+      background: var(--rojo-fuerte);
+      padding: 14px 22px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .content {
+      padding: 48px 36px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+
+    .status {
+      display: inline-block;
+      background: rgba(239, 35, 60, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(239, 35, 60, 0.5);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .lead {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e7eaf0;
+      margin-bottom: 28px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .service {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 14px;
+      font-size: 14px;
+      color: #f4f6fa;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: 800;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--rojo);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: var(--rojo-fuerte);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--azul);
+    }
+
+    .contact-card {
+      background: #ffffff;
+      color: var(--azul);
+      border-radius: 20px;
+      padding: 28px;
+    }
+
+    .contact-card h2 {
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+
+    .contact-item {
+      margin-bottom: 18px;
+    }
+
+    .label {
+      font-size: 12px;
+      color: #697184;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      margin-bottom: 5px;
+    }
+
+    .value {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .footer {
+      padding: 18px 36px;
+      background: rgba(0, 0, 0, 0.18);
+      color: #d8dce4;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 14px;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+        padding: 34px 22px;
+      }
+
+      .brand {
+        font-size: 34px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .lead {
+        font-size: 16px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .footer {
+        padding: 18px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="top-bar">
+      Diagnóstico preciso · Reparación eficiente · Continuidad operativa
+    </div>
+
+    <section class="content">
+      <div>
+        <div class="brand">DIREEL</div>
+
+        <div class="status">
+          Sitio web en actualización
+        </div>
+
+        <h1>Estamos renovando nuestra página web</h1>
+
+        <p class="lead">
+          Muy pronto encontrarás aquí información completa sobre nuestros servicios, clientes
+          y soluciones técnicas para unidades pesadas diésel.
+          <br><br>
+          DIREEL continúa atendiendo con normalidad mantenimiento preventivo,
+          diagnóstico técnico y reparación de tractocamiones, autobuses y unidades
+          pesadas multimarcas.
+        </p>
+
+        <div class="services">
+          <div class="service">Mantenimiento preventivo</div>
+          <div class="service">Reparación de motores diésel</div>
+          <div class="service">Transmisiones, embragues y diferenciales</div>
+          <div class="service">Diagnóstico técnico de causa real</div>
+          <div class="service">Sistemas eléctricos asociados</div>
+          <div class="service">Unidades pesadas multimarcas</div>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/522294246574?text=Hola%2C%20estoy%20interesado%20en%20informaci%C3%B3n%20sobre%20servicios%20para%20una%20unidad%20di%C3%A9sel%20pesada.%20Quiero%20solicitar%20informes%20para%20revisi%C3%B3n%2C%20mantenimiento%20o%20reparaci%C3%B3n." target="_blank">
+            Solicitar informes por WhatsApp
+          </a>
+
+          <a class="btn btn-secondary" href="tel:+522294246574">
+            Llamar ahora
+          </a>
+        </div>
+      </div>
+
+      <aside class="contact-card">
+        <h2>Contacto directo</h2>
+
+        <div class="contact-item">
+          <div class="label">WhatsApp / Teléfono</div>
+          <div class="value">+52 229 424 6574</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="label">Ubicación</div>
+          <div class="value">Veracruz, Veracruz, México</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="label">Atención</div>
+          <div class="value">Lunes a sábado</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="label">Especialidad</div>
+          <div class="value">Unidades pesadas diésel multimarcas</div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      DIREEL | Servicio técnico diésel para unidades pesadas multimarcas
+    </footer>
+  </main>
+</body>
+</html>
